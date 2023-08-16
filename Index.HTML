@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
-<body>
-    <h1>Inventory</h1>
-    <h1>Loot</h1>
-takk
-    <button></button>
-    <button></button>
-    hei
-</body>
-</html>
 
+<body>
+    <!-- Buttons -->
+    <button onclick="open_inv()">Open</button>
+    <button onclick="close_inv()">Empty the trash can</button>
+    
+    
+    <!-- Invetory -->
+    <div class="gridbox">
+        <div>
+            <h1 class="header inv">Trash can</h1>
+
+            <div id="insideInv">
+            </div>
+
+            <h1 class="header">SCOREBOARD: 0</h1>
+        </div>
+        
+        <!-- Loot -->
+        <div>
+            <h1 class="header loot">Loot</h1>
+            <div id="insideLoot">
+                <div id="loot1" onclick="add_pics('loot1', 'box1', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot2" onclick="add_pics('loot2', 'box2', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot3" onclick="add_pics('loot3', 'box3', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot4" onclick="add_pics('loot4', 'box4', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot5" onclick="add_pics('loot5', 'box5', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot6" onclick="add_pics('loot6', 'box6', 'bread')"><img src="/img/bread.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <img src="/img/grass03.png"> -->
+
+</body>
+
+</html>
