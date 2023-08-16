@@ -21,7 +21,7 @@ body {
 
 /* INSIDE AND BOXES--------------------------------------------INSIDE AND BOXES */
 #insideInv {
-    background-color: rgb(81, 79, 79);
+    background-color: rgb(210, 187, 110);
     border: 2px solid green;
     display: grid;
     gap: 15px;
@@ -30,18 +30,21 @@ body {
 }
 
 .inv_boxer {
-    border: solid 1px red;
+    border: solid 1px black;
     background-color: gray;
     height: 100px;
     width: 100px;
 }
 
 #insideLoot {
-    background-color: whitesmoke;
-    border: solid 1px blue;
+    background-color: rgb(210, 187, 110);
+    border: solid 5px rgba(0, 0, 0, 0.114);
 }
 
 /* IMAGES------------------------------------------------------------IMAGES */
 img {
     width: 100px;
+}
+#music {
+    padding-top: 480px;
 }
