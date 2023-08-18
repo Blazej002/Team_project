@@ -3,11 +3,25 @@ let numb = 0;
 function empty() {
     numb++
     scoreboard(numb)
+    checking()
 }
 function full() {
     numb++;
     scoreboard(numb)
-}
+    checking()
+};
+function checking() {
+    if (numb == 6) {
+        alert('congratulation you won, you got ' + numb + ' points')
+    } else if (numb == 8) {
+        alert('404 easter egg not found')
+    } else if (numb == 10){
+        alert('tf, why you still here?')
+        alert('get out')
+        // window.location.reload()
+        window.location.replace("https://www.jw.org/no/bibliotek/blad/");
+    }
+} 
 
 function add_pics(id, new_id, items) {
         empty()
